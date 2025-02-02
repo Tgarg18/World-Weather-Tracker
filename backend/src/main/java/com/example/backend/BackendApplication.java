@@ -30,6 +30,8 @@ public class BackendApplication {
 		System.setProperty("DB_USERNAME", dotenv.get("DB_USERNAME"));
 		System.setProperty("DB_PASSWORD", dotenv.get("DB_PASSWORD"));
 		System.setProperty("SECRET_KEY", dotenv.get("SECRET_KEY"));
+		System.setProperty("SMTP_USERNAME", dotenv.get("SMTP_USERNAME"));
+		System.setProperty("SMTP_PASSWORD", dotenv.get("SMTP_PASSWORD"));
 		SpringApplication.run(BackendApplication.class, args);
 	}
 
